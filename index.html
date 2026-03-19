@@ -1982,6 +1982,145 @@
             }
         }
     </style>
+
+<!-- Sticky Bottom Strip -->
+<div id="bottom-strip">
+    <div id="bottom-strip-inner">
+        <div id="bottom-strip-shimmer"></div>
+        <div id="bottom-strip-content">
+            <span id="bottom-strip-dot"></span>
+            <span id="bottom-strip-text">
+                <span id="bottom-strip-highlight">Limited appointments available this week</span>
+                <span id="bottom-strip-divider">·</span>
+                Consultations fill fast — don't miss your chance to start healing.
+            </span>
+            <a href="#contact-form" id="bottom-strip-cta">Claim Your Spot →</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    #bottom-strip {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 980;
+        height: 38px;
+        background: #0a1628;
+        border-top: 1px solid rgba(14, 165, 160, 0.2);
+        overflow: hidden;
+    }
+
+    #bottom-strip-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Shimmer sweep */
+    #bottom-strip-shimmer {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(14, 165, 160, 0.07) 30%,
+            rgba(201, 169, 110, 0.12) 50%,
+            rgba(14, 165, 160, 0.07) 70%,
+            transparent 100%
+        );
+        background-size: 200% 100%;
+        animation: strip-shimmer 3.5s ease-in-out infinite;
+    }
+
+    @keyframes strip-shimmer {
+        0%   { background-position: -100% 0; }
+        100% { background-position: 200% 0; }
+    }
+
+    #bottom-strip-content {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.65rem;
+        padding: 0 1.25rem;
+    }
+
+    #bottom-strip-dot {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #0ea5a0;
+        flex-shrink: 0;
+        animation: dot-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes dot-pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%       { opacity: 0.4; transform: scale(0.75); }
+    }
+
+    #bottom-strip-text {
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.72rem;
+        font-weight: 300;
+        color: rgba(248, 245, 240, 0.55);
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+    }
+
+    #bottom-strip-highlight {
+        font-weight: 400;
+        color: rgba(248, 245, 240, 0.82);
+    }
+
+    #bottom-strip-divider {
+        color: rgba(14, 165, 160, 0.4);
+    }
+
+    #bottom-strip-cta {
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #0ea5a0;
+        text-decoration: none;
+        border: 1px solid rgba(14, 165, 160, 0.35);
+        padding: 0.2rem 0.65rem;
+        border-radius: 2px;
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    #bottom-strip-cta:hover {
+        background: rgba(14, 165, 160, 0.1);
+        color: #14b8b3;
+    }
+
+    /* Nudge the floating call button up so it clears the strip */
+    #float-call {
+        bottom: calc(1.75rem + 38px);
+    }
+
+    @media (max-width: 560px) {
+        #bottom-strip-divider,
+        #bottom-strip-text > span:last-of-type {
+            display: none;
+        }
+    }
+</style>
 </body>
 
 </html>
