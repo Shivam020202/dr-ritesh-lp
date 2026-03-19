@@ -1893,6 +1893,74 @@
         handleFooterGrid();
         window.addEventListener('resize', handleFooterGrid, { passive: true });
     </script>
+
+<!-- Floating Call Button -->
+<a href="tel:+17325550100" id="float-call" aria-label="Call Dr. Ritesh Amin" title="Call (732) 555-1234">
+    <span id="float-call-label">Call Us</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+    </svg>
+</a>
+
+<style>
+    #float-call {
+        position: fixed;
+        bottom: 1.75rem;
+        right: 1.75rem;
+        z-index: 990;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #0ea5a0;
+        color: white;
+        text-decoration: none;
+        padding: 0.75rem 1.25rem 0.75rem 1rem;
+        border-radius: 100px;
+        box-shadow: 0 8px 32px rgba(14, 165, 160, 0.45), 0 2px 8px rgba(0,0,0,0.2);
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.82rem;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+    }
+
+    #float-call::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 100px;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+        animation: float-ring 2s ease-out infinite;
+    }
+
+    @keyframes float-ring {
+        0%   { transform: scale(1);   opacity: 0.6; }
+        100% { transform: scale(1.35); opacity: 0; }
+    }
+
+    #float-call:hover {
+        background: #0c8f8a;
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px rgba(14, 165, 160, 0.55), 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    #float-call svg {
+        flex-shrink: 0;
+    }
+
+    /* Collapse to icon-only on mobile */
+    @media (max-width: 480px) {
+        #float-call {
+            padding: 0.875rem;
+            border-radius: 50%;
+        }
+        #float-call-label {
+            display: none;
+        }
+    }
+</style>
 </body>
 
 </html>
