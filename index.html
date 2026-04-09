@@ -21,7 +21,7 @@
                 extend: {
                     colors: {
                         navy: { DEFAULT: '#0a1628', mid: '#112240', light: '#1a3a5c', deep: '#060e1c' },
-                        teal: { DEFAULT: '#0ea5a0', light: '#14b8b3', dark: '#0c8f8a' },
+                        teal: { DEFAULT: '#3572d4', light: '#4a85e0', dark: '#2a5cb8' },
                         gold: { DEFAULT: '#c9a96e', light: '#d4b87e', dark: '#b8944f' },
                         cream: { DEFAULT: '#f8f5f0', dark: '#ede8e0' },
                     },
@@ -105,7 +105,7 @@
             background: rgba(10, 22, 40, 0.92);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(14, 165, 160, 0.15);
+            border-bottom: 1px solid rgba(53, 114, 212, 0.15);
             padding: 0.75rem 0;
         }
 
@@ -116,7 +116,7 @@
             right: -120px;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(14, 165, 160, 0.18) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(53, 114, 212, 0.18) 0%, transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
@@ -129,13 +129,13 @@
             transform: translate(-50%, -50%);
             width: 700px;
             height: 700px;
-            background: radial-gradient(circle, rgba(14, 165, 160, 0.14) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(53, 114, 212, 0.14) 0%, transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
 
         .grid-lines {
-            background-image: linear-gradient(rgba(14, 165, 160, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14, 165, 160, 0.04) 1px, transparent 1px);
+            background-image: linear-gradient(rgba(53, 114, 212, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(53, 114, 212, 0.04) 1px, transparent 1px);
             background-size: 60px 60px;
         }
 
@@ -145,7 +145,7 @@
             font-weight: 600;
             line-height: 1;
             color: transparent;
-            -webkit-text-stroke: 1px rgba(14, 165, 160, 0.12);
+            -webkit-text-stroke: 1px rgba(53, 114, 212, 0.12);
             position: absolute;
             top: -0.15em;
             right: -0.1em;
@@ -183,7 +183,7 @@
 
         .thin-rule {
             border: none;
-            border-top: 1px solid rgba(14, 165, 160, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .thin-rule-gold {
@@ -192,36 +192,38 @@
         }
 
         .hero-card {
-            background: linear-gradient(135deg, rgba(17, 34, 64, 0.95) 0%, rgba(10, 22, 40, 0.98) 100%);
-            border: 1px solid rgba(14, 165, 160, 0.25);
-            border-top: 3px solid #0ea5a0;
-            border-radius: 2px;
-            backdrop-filter: blur(12px);
+            background: linear-gradient(145deg, rgba(17, 34, 64, 0.88) 0%, rgba(15, 25, 50, 0.94) 100%);
+            border: 1px solid rgba(53, 114, 212, 0.18);
+            border-top: 2px solid rgba(53, 114, 212, 0.45);
+            border-radius: 16px;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.04);
         }
 
         .badge {
             display: inline-flex;
             align-items: center;
-            padding: 0.25rem 0.75rem;
-            border: 1px solid rgba(14, 165, 160, 0.4);
+            padding: 0.3rem 0.85rem;
+            border: 1px solid rgba(53, 114, 212, 0.25);
+            background: rgba(53, 114, 212, 0.06);
             border-radius: 100px;
             font-size: 0.72rem;
             font-family: 'Nunito', sans-serif;
             font-weight: 400;
-            color: #0ea5a0;
+            color: #3572d4;
             white-space: nowrap;
         }
 
         .treatment-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            border: 1px solid rgba(14, 165, 160, 0.15);
+            border: 1px solid rgba(53, 114, 212, 0.15);
         }
 
         .treatment-cell {
             position: relative;
             padding: 1.6rem 1.6rem 2rem;
-            border: 1px solid rgba(14, 165, 160, 0.15);
+            border: 1px solid rgba(53, 114, 212, 0.15);
             overflow: hidden;
             transition: background 0.3s ease;
         }
@@ -233,7 +235,7 @@
             left: 1.6rem;
             right: 1.6rem;
             height: 2px;
-            background: #0ea5a0;
+            background: #3572d4;
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.35s ease;
@@ -244,7 +246,7 @@
         }
 
         .treatment-cell:hover {
-            background: rgba(14, 165, 160, 0.04);
+            background: rgba(53, 114, 212, 0.04);
         }
 
         @media (max-width: 768px) {
@@ -277,116 +279,120 @@
         }
 
         .stat-box-teal {
-            background: linear-gradient(135deg, #0ea5a0 0%, #0c8f8a 100%);
+            background: linear-gradient(135deg, #3572d4 0%, #2a5cb8 100%);
         }
 
         .insurance-section {
-            background: linear-gradient(135deg, #0ea5a0 0%, #0a2a5a 60%, #0a1628 100%);
+            background: linear-gradient(135deg, #3572d4 0%, #0a2a5a 60%, #0a1628 100%);
         }
 
         .btn-teal {
-            background: #0ea5a0;
+            background: linear-gradient(135deg, #3572d4 0%, #2a5cb8 100%);
             color: white;
-            border: 2px solid #0ea5a0;
-            padding: 0.75rem 1.75rem;
+            border: none;
+            padding: 0.8rem 1.85rem;
             font-family: 'Nunito', sans-serif;
             font-weight: 400;
             font-size: 0.82rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            text-transform: none;
             transition: all 0.3s ease;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 16px rgba(53, 114, 212, 0.25);
         }
 
         .btn-teal:hover {
-            background: #0c8f8a;
-            border-color: #0c8f8a;
-            transform: translateY(-1px);
-            box-shadow: 0 8px 24px rgba(14, 165, 160, 0.3);
+            background: linear-gradient(135deg, #4a85e0 0%, #3572d4 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(53, 114, 212, 0.35);
         }
 
         .btn-outline-white {
-            background: transparent;
+            background: rgba(255, 255, 255, 0.06);
             color: white;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            padding: 0.75rem 1.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 0.8rem 1.85rem;
             font-family: 'Nunito', sans-serif;
             font-weight: 400;
             font-size: 0.82rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            text-transform: none;
             transition: all 0.3s ease;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             text-decoration: none;
+            border-radius: 50px;
         }
 
         .btn-outline-white:hover {
-            border-color: white;
-            background: rgba(255, 255, 255, 0.08);
-            transform: translateY(-1px);
+            border-color: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
         }
 
         .btn-outline-gold {
-            background: transparent;
+            background: rgba(201, 169, 110, 0.06);
             color: #c9a96e;
-            border: 2px solid rgba(201, 169, 110, 0.6);
-            padding: 0.75rem 1.75rem;
+            border: 1px solid rgba(201, 169, 110, 0.4);
+            padding: 0.8rem 1.85rem;
             font-family: 'Nunito', sans-serif;
             font-weight: 400;
             font-size: 0.82rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            text-transform: none;
             transition: all 0.3s ease;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             text-decoration: none;
+            border-radius: 50px;
         }
 
         .btn-outline-gold:hover {
             border-color: #c9a96e;
-            background: rgba(201, 169, 110, 0.08);
-            transform: translateY(-1px);
+            background: rgba(201, 169, 110, 0.12);
+            transform: translateY(-2px);
         }
 
         .btn-white-navy {
             background: white;
             color: #0a1628;
-            border: 2px solid white;
-            padding: 0.875rem 2.25rem;
+            border: none;
+            padding: 0.9rem 2.25rem;
             font-family: 'Nunito', sans-serif;
             font-weight: 500;
             font-size: 0.85rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            text-transform: none;
             transition: all 0.3s ease;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 16px rgba(255,255,255,0.15);
         }
 
         .btn-white-navy:hover {
-            background: #0ea5a0;
-            border-color: #0ea5a0;
+            background: #3572d4;
             color: white;
-            transform: translateY(-1px);
-            box-shadow: 0 8px 24px rgba(14, 165, 160, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(53, 114, 212, 0.35);
         }
 
         .form-input {
             width: 100%;
             background: rgba(10, 22, 40, 0.7);
-            border: 1px solid rgba(14, 165, 160, 0.2);
+            border: 1px solid rgba(53, 114, 212, 0.2);
             color: #f8f5f0;
             font-family: 'Nunito', sans-serif;
             font-weight: 300;
@@ -404,8 +410,8 @@
         }
 
         .form-input:focus {
-            border-color: #0ea5a0;
-            box-shadow: 0 0 0 3px rgba(14, 165, 160, 0.12);
+            border-color: #3572d4;
+            box-shadow: 0 0 0 3px rgba(53, 114, 212, 0.12);
         }
 
         .form-input option {
@@ -424,36 +430,175 @@
             margin-bottom: 0.4rem;
         }
 
+        /* ── Mobile menu ── */
         #mobile-menu {
-            display: none;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(10, 22, 40, 0.98);
+            inset: 0;
             z-index: 899;
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 1.75rem;
+            background: rgba(7, 14, 28, 0.97);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            transform: translateY(-10px) scale(0.99);
+            transition:
+                opacity 0.32s ease,
+                transform 0.32s ease,
+                visibility 0s linear 0.32s;
+            padding: 2rem 1.5rem;
+            gap: 0;
+        }
+
+        #mobile-menu::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #3572d4 35%, #c9a96e 65%, transparent 100%);
+        }
+
+        #mobile-menu::after {
+            content: '';
+            position: absolute;
+            bottom: 60px; left: 50%; transform: translateX(-50%);
+            width: 120px; height: 120px;
+            background: radial-gradient(circle, rgba(53,114,212,0.12) 0%, transparent 70%);
+            pointer-events: none;
         }
 
         #mobile-menu.open {
-            display: flex;
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+            transition:
+                opacity 0.32s ease,
+                transform 0.32s ease,
+                visibility 0s linear 0s;
         }
 
-        #mobile-menu a {
+        #mobile-menu .mob-brand {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(53,114,212,0.15);
+            width: 100%;
+        }
+
+        #mobile-menu .mob-brand-name {
+            display: block;
             font-family: 'Urbanist', sans-serif;
-            font-size: 1.75rem;
-            font-weight: 400;
+            font-size: 1.15rem;
+            font-weight: 600;
             color: #f8f5f0;
+            letter-spacing: 0.01em;
+        }
+
+        #mobile-menu .mob-brand-sub {
+            display: block;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.6rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #3572d4;
+            margin-top: 0.2rem;
+        }
+
+        #mobile-menu .mob-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 260px;
+            gap: 0;
+        }
+
+        #mobile-menu .mob-links a {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: rgba(248, 245, 240, 0.65);
+            text-decoration: none;
+            padding: 0.85rem 0;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid rgba(53, 114, 212, 0.1);
+            letter-spacing: 0.02em;
+            transition: color 0.2s ease, letter-spacing 0.2s ease;
+        }
+
+        #mobile-menu .mob-links a:last-child {
+            border-bottom: none;
+        }
+
+        #mobile-menu .mob-links a:hover {
+            color: #3572d4;
+            letter-spacing: 0.06em;
+        }
+
+        #mobile-menu .mob-cta {
+            margin-top: 2.25rem;
+            width: 100%;
+            max-width: 260px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        #mobile-menu .mob-cta .btn-teal {
+            justify-content: center;
+            font-size: 0.82rem !important;
+            padding: 0.875rem 1.5rem !important;
+            letter-spacing: 0.1em;
+            border-radius: 0;
+        }
+
+        #mobile-menu .mob-contact {
+            margin-top: 2.25rem;
+            text-align: center;
+            border-top: 1px solid rgba(53,114,212,0.1);
+            padding-top: 1.5rem;
+            width: 100%;
+        }
+
+        #mobile-menu .mob-contact a {
+            display: block;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 300;
+            color: rgba(248, 245, 240, 0.4);
             text-decoration: none;
             transition: color 0.2s;
         }
 
-        #mobile-menu a:hover {
-            color: #0ea5a0;
+        #mobile-menu .mob-contact a:hover { color: #3572d4; }
+
+        #mobile-menu .mob-close {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            background: rgba(53,114,212,0.08);
+            border: 1px solid rgba(53,114,212,0.2);
+            color: rgba(248,245,240,0.7);
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s, color 0.2s;
+            line-height: 1;
+        }
+
+        #mobile-menu .mob-close:hover {
+            background: rgba(53,114,212,0.18);
+            color: #f8f5f0;
         }
 
         .pull-quote {
@@ -472,11 +617,11 @@
 
         .eyebrow {
             font-family: 'Nunito', sans-serif;
-            font-size: 0.68rem;
+            font-size: 0.72rem;
             font-weight: 400;
-            letter-spacing: 0.16em;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: #0ea5a0;
+            color: #3572d4;
         }
 
         .nav-link {
@@ -491,7 +636,7 @@
         }
 
         .nav-link:hover {
-            color: #0ea5a0;
+            color: #3572d4;
         }
 
         .footer-link {
@@ -541,17 +686,41 @@
 
             .cta-buttons {
                 flex-direction: column;
-                align-items: center;
+                align-items: stretch;
+            }
+
+            .cta-buttons a, .cta-buttons button {
+                justify-content: center;
+                text-align: center;
             }
 
             .trust-row {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 0.6rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+
+            .trust-row .trust-sep {
+                display: none;
             }
 
             .footer-grid {
                 grid-template-columns: 1fr 1fr !important;
+            }
+
+            #hero {
+                padding-bottom: calc(3rem + 38px);
+            }
+
+            .hero-urgency {
+                white-space: normal !important;
+                font-size: 0.68rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .trust-row {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -598,60 +767,79 @@
     </nav>
 
     <div id="mobile-menu">
-        <button onclick="toggleMenu()"
-            class="absolute top-6 right-6 text-cream text-2xl bg-transparent border-none cursor-pointer">✕</button>
-        <a href="#treatments" onclick="toggleMenu()">Treatments</a>
-        <a href="#why" onclick="toggleMenu()">About</a>
-        <a href="#insurance" onclick="toggleMenu()">Insurance</a>
-        <a href="#faq" onclick="toggleMenu()">FAQ</a>
-        <a href="#contact-form" class="btn-teal" onclick="toggleMenu()">Schedule Consultation</a>
+        <button class="mob-close" onclick="toggleMenu()" aria-label="Close menu">✕</button>
+
+        <div class="mob-brand">
+            <span class="mob-brand-name">Dr. Ritesh Amin · MD</span>
+            <span class="mob-brand-sub">Board-Certified Psychiatrist · Edison, NJ</span>
+        </div>
+
+        <nav class="mob-links">
+            <a href="#treatments" onclick="toggleMenu()">Treatments</a>
+            <a href="#why" onclick="toggleMenu()">About</a>
+            <a href="#insurance" onclick="toggleMenu()">Insurance</a>
+            <a href="#faq" onclick="toggleMenu()">FAQ</a>
+        </nav>
+
+        <div class="mob-cta">
+            <a href="#contact-form" class="btn-teal" onclick="toggleMenu()">
+                Book Free Consultation
+            </a>
+            <a href="tel:+17325550100" class="btn-outline-white" onclick="toggleMenu()" style="justify-content:center;font-size:0.82rem;padding:0.75rem 1.5rem;letter-spacing:0.1em;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Call (732) 555-1234
+            </a>
+        </div>
+
+        <div class="mob-contact">
+            <a href="mailto:info@drriteshamin.com">info@drriteshamin.com</a>
+        </div>
     </div>
 
     <main>
 
         <!-- ═══ SECTION 1: HERO ═══ -->
         <section id="hero"
-            class="bg-navy relative overflow-hidden flex items-center pt-20 pb-12 grid-lines glow-teal-tr">
+            class="bg-navy relative overflow-hidden flex items-center pt-24 pb-16">
+            <!-- Soft ambient background image -->
             <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=60"
-                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.06] z-0" />
+                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.05] z-0" />
+            <!-- Warm multi-tone gradient ambience -->
             <div
-                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_80%_60%_at_70%_30%,rgba(14,165,160,0.12)_0%,transparent_60%),radial-gradient(ellipse_60%_80%_at_20%_80%,rgba(10,42,90,0.4)_0%,transparent_60%)]">
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_70%_55%_at_65%_25%,rgba(53,114,212,0.14)_0%,transparent_60%),radial-gradient(ellipse_50%_60%_at_15%_75%,rgba(42,92,184,0.12)_0%,transparent_55%),radial-gradient(ellipse_40%_40%_at_80%_80%,rgba(201,169,110,0.06)_0%,transparent_50%)]">
             </div>
+            <!-- Soft bottom fade to cream -->
+            <div class="absolute bottom-0 left-0 right-0 h-[80px] pointer-events-none z-[1] [background:linear-gradient(to_top,rgba(248,245,240,0.03)_0%,transparent_100%)]"></div>
 
-            <div class="max-w-7xl mx-auto px-6 w-full relative z-10 py-10">
-                <div class="hero-split grid gap-12 items-center [grid-template-columns:1fr_0.85fr]">
+            <div class="max-w-7xl mx-auto px-6 w-full relative z-10 py-8">
+                <div class="hero-split grid gap-14 items-center [grid-template-columns:1fr_0.85fr]">
 
                     <!-- LEFT -->
                     <div class="fade-up">
-                        <div class="eyebrow mb-4 flex items-center gap-3">
-                            <span class="inline-block w-7 h-px bg-teal"></span>
-                            Edison, New Jersey · Psychiatry
+                        <div class="eyebrow mb-5 flex items-center gap-3 !text-[0.7rem] !tracking-[0.12em] !font-light">
+                            <span class="inline-block w-8 h-px bg-teal/50"></span>
+                            Edison, New Jersey
                         </div>
-                        <h1 class="text-hero font-semibold text-cream mb-[0.6rem] tracking-[0.01em]">
-                            Advanced Depression<br />Treatment in Edison,<br />New Jersey
+                        <h1 class="text-hero font-normal text-cream mb-3 tracking-[-0.01em] leading-[1.12]">
+                            Find Relief from<br />Treatment-Resistant<br />Depression
                         </h1>
                         <p
-                            class="font-heading text-[clamp(1.1rem,2.2vw,1.5rem)] italic font-light text-teal mb-[1.2rem] leading-[1.3]">
-                            TMS, Spravato® &amp; Ketamine Therapy
+                            class="font-heading text-[clamp(1rem,2vw,1.3rem)] font-light text-teal/90 mb-5 leading-[1.45]">
+                            Personalized TMS, Spravato® &amp; Ketamine Therapy
                         </p>
-                        <p class="text-[0.97rem] leading-[1.65] text-cream/70 max-w-[500px] mb-[1.6rem] font-light">
-                            Find relief from treatment-resistant depression with safe, FDA-approved and evidence-based
-                            therapies — personalized to your unique neurological profile.
+                        <p class="text-[0.95rem] leading-[1.75] text-cream/60 max-w-[460px] mb-6 font-light">
+                            You've tried everything. We offer advanced, FDA-approved therapies that work differently — tailored to your unique needs by a board-certified psychiatrist.
                         </p>
-                        <!-- Urgency bar -->
+
+                        <!-- Soft urgency nudge -->
                         <a href="#contact-form"
-                            class="inline-flex items-center gap-2 bg-teal/[0.08] border border-teal/30 text-teal text-[0.72rem] font-normal tracking-[0.06em] uppercase px-3 py-[0.3rem] mb-4 hover:bg-teal/[0.14] transition-colors duration-200 no-underline">
-                            <span class="inline-block w-[6px] h-[6px] rounded-full bg-teal animate-pulse"></span>
-                            Limite consultation spots left this week — reserve yours
+                            class="hero-urgency inline-flex flex-wrap items-center gap-2 bg-teal/[0.06] border border-teal/20 text-teal/80 text-[0.74rem] font-light tracking-[0.02em] px-4 py-[0.4rem] mb-5 rounded-full hover:bg-teal/[0.12] transition-all duration-300 no-underline">
+                            <span class="inline-block w-[5px] h-[5px] rounded-full bg-teal/70 animate-pulse shrink-0"></span>
+                            Limited spots available this week
                         </a>
-                        <div class="cta-buttons flex flex-wrap gap-3 mb-5">
+
+                        <div class="cta-buttons flex flex-wrap gap-3 mb-6">
                             <a href="#contact-form" class="btn-teal">
-                                <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 1v7m0 0l-2.5-2.5M8 8l2.5-2.5" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" />
-                                    <path d="M3 11.5a8 8 0 005 1.5 8 8 0 005-1.5" stroke="currentColor"
-                                        stroke-width="1.5" stroke-linecap="round" />
-                                </svg>
                                 Book a Free Consultation
                             </a>
                             <a href="tel:+17325550100" class="btn-outline-white">
@@ -663,105 +851,92 @@
                                 Call (732) 555-1234
                             </a>
                         </div>
-                        <!-- Social proof strip directly under CTAs -->
-                        <div class="flex items-center gap-3 mb-5 p-3 bg-navy-mid/60 border border-teal/[0.12]">
+
+                        <!-- Social proof — soft card -->
+                        <div class="flex items-center gap-3 mb-6 px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-xl backdrop-blur-sm">
                             <img src="https://images.unsplash.com/photo-1702579451557-42f707b4a434?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Sarah M."
-                                class="w-9 h-9 rounded-full object-cover border-2 border-teal shrink-0" />
+                                class="w-10 h-10 rounded-full object-cover border-2 border-white/20 shrink-0" />
                             <div class="min-w-0">
-                                <div class="stars text-[0.65rem] leading-none mb-[0.2rem]">★★★★★</div>
-                                <p class="text-[0.78rem] italic font-light text-cream/75 m-0 leading-[1.4] truncate">
+                                <div class="stars text-[0.6rem] leading-none mb-[0.25rem]">★★★★★</div>
+                                <p class="text-[0.8rem] italic font-light text-cream/70 m-0 leading-[1.45]">
                                     "After 4 failed medications, TMS with Dr. Amin changed my life."</p>
-                                <p class="text-[0.63rem] font-normal text-teal/70 m-0 mt-[0.15rem]">— Sarah M., Verified
-                                    TMS Patient</p>
+                                <p class="text-[0.66rem] font-normal text-cream/40 m-0 mt-1">Sarah M. — Verified TMS Patient</p>
                             </div>
                         </div>
-                        <hr class="thin-rule mb-4" />
+
+                        <!-- Trust markers -->
                         <div class="trust-row flex items-center flex-wrap gap-3">
-                            <span class="text-[0.76rem] font-light text-cream/60 flex items-center gap-[0.35rem]"><span
-                                    class="text-gold text-[0.6rem]">✦</span> Board-Certified Psychiatrist</span>
-                            <span class="text-teal/30 text-[0.8rem]">|</span>
-                            <span class="text-[0.76rem] font-light text-cream/60 flex items-center gap-[0.35rem]"><span
-                                    class="text-gold text-[0.6rem]">✦</span> Covered by Most Insurance</span>
-                            <span class="text-teal/30 text-[0.8rem]">|</span>
-                            <span class="text-[0.76rem] font-light text-cream/60 flex items-center gap-[0.35rem]"><span
-                                    class="text-gold text-[0.6rem]">✦</span> 500+ Patients Treated</span>
-                            <span class="text-teal/30 text-[0.8rem]">|</span>
-                            <span class="text-[0.76rem] font-light text-cream/60 flex items-center gap-[0.35rem]"><span
-                                    class="text-gold text-[0.6rem]">✦</span> 4.9★ Rating</span>
+                            <span class="text-[0.74rem] font-light text-cream/45 flex items-center gap-[0.4rem]">
+                                <span class="w-[5px] h-[5px] rounded-full bg-teal/50"></span> Board-Certified</span>
+                            <span class="trust-sep text-cream/15 text-[0.6rem]">·</span>
+                            <span class="text-[0.74rem] font-light text-cream/45 flex items-center gap-[0.4rem]">
+                                <span class="w-[5px] h-[5px] rounded-full bg-teal/50"></span> Insurance Accepted</span>
+                            <span class="trust-sep text-cream/15 text-[0.6rem]">·</span>
+                            <span class="text-[0.74rem] font-light text-cream/45 flex items-center gap-[0.4rem]">
+                                <span class="w-[5px] h-[5px] rounded-full bg-teal/50"></span> 500+ Patients</span>
+                            <span class="trust-sep text-cream/15 text-[0.6rem]">·</span>
+                            <span class="text-[0.74rem] font-light text-cream/45 flex items-center gap-[0.4rem]">
+                                <span class="w-[5px] h-[5px] rounded-full bg-gold/50"></span> 4.9★ Rating</span>
                         </div>
                     </div>
 
                     <!-- RIGHT — Floating Card -->
                     <div class="hero-card-col fade-up fade-up-delay-2 relative">
-                        <div
-                            class="hero-card p-[1.6rem] relative shadow-[0_40px_80px_rgba(0,0,0,0.4),0_0_0_1px_rgba(14,165,160,0.1)]">
+                        <div class="hero-card p-7 relative">
                             <!-- Testimonial -->
                             <div class="mb-5">
-                                <div class="stars mb-2 text-[0.9rem]">★★★★★</div>
-                                <p class="text-[0.9rem] italic font-light leading-[1.6] text-cream mb-[0.875rem]">
+                                <div class="stars mb-2 text-[0.85rem]">★★★★★</div>
+                                <p class="text-[0.9rem] italic font-light leading-[1.65] text-cream/85 mb-4">
                                     "After trying 4 different medications with no success, TMS therapy with Dr. Amin
                                     completely changed my life. I finally feel like myself again."
                                 </p>
                                 <div class="flex items-center gap-3">
                                     <img src="https://images.unsplash.com/photo-1702579451557-42f707b4a434?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                         alt="Verified patient"
-                                        class="w-11 h-11 rounded-full object-cover border-2 border-teal shrink-0" />
+                                        class="w-11 h-11 rounded-full object-cover border-2 border-white/20 shrink-0" />
                                     <div>
                                         <p class="text-[0.82rem] font-normal text-cream m-0">Sarah M.</p>
-                                        <p class="text-[0.68rem] font-light text-cream/50 m-0">Verified Patient ·
-                                            Edison, NJ</p>
+                                        <p class="text-[0.68rem] font-light text-cream/45 m-0">Verified Patient · Edison, NJ</p>
                                     </div>
                                 </div>
                             </div>
-                            <hr class="thin-rule mb-4" />
+                            <div class="w-full h-px bg-white/[0.08] mb-5"></div>
                             <!-- Credential Badge -->
                             <div class="flex items-center gap-3 mb-5">
                                 <div
-                                    class="w-10 h-10 rounded-full bg-teal/[0.12] border-2 border-teal/40 flex items-center justify-center shrink-0">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0ea5a0"
+                                    class="w-10 h-10 rounded-full bg-teal/[0.10] border border-teal/25 flex items-center justify-center shrink-0">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3572d4"
                                         stroke-width="1.5">
                                         <path
                                             d="M12 15l-2 5-3-1 1-5M12 15l2 5 3-1-1-5M12 3C8.7 3 6 5.7 6 9s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z" />
                                     </svg>
                                 </div>
                                 <div>
-                                    <p
-                                        class="text-[0.65rem] tracking-[0.1em] uppercase text-teal m-0 mb-[0.15rem] font-normal">
-                                        ABPN Certified</p>
-                                    <p class="text-[0.78rem] font-normal text-cream m-0">American Board of Psychiatry
-                                        &amp; Neurology</p>
+                                    <p class="text-[0.65rem] tracking-[0.08em] uppercase text-teal/80 m-0 mb-[0.15rem] font-normal">ABPN Certified</p>
+                                    <p class="text-[0.78rem] font-normal text-cream/80 m-0">American Board of Psychiatry &amp; Neurology</p>
                                 </div>
                             </div>
-                            <hr class="thin-rule mb-4" />
+                            <div class="w-full h-px bg-white/[0.08] mb-5"></div>
                             <!-- Mini Stats -->
-                            <div class="grid grid-cols-3 gap-2 text-center">
+                            <div class="grid grid-cols-3 gap-3 text-center">
                                 <div>
-                                    <p class="font-heading text-2xl font-semibold text-teal m-0 leading-none">500+</p>
-                                    <p
-                                        class="text-[0.6rem] tracking-[0.07em] uppercase text-cream/50 mt-[0.2rem] m-0 font-light">
-                                        Patients</p>
+                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">500+</p>
+                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">Patients</p>
                                 </div>
-                                <div class="border-l border-r border-teal/20">
-                                    <p class="font-heading text-2xl font-semibold text-teal m-0 leading-none">15+</p>
-                                    <p
-                                        class="text-[0.6rem] tracking-[0.07em] uppercase text-cream/50 mt-[0.2rem] m-0 font-light">
-                                        Years</p>
+                                <div class="border-l border-r border-white/[0.08]">
+                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">15+</p>
+                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">Years</p>
                                 </div>
                                 <div>
-                                    <p class="font-heading text-2xl font-semibold text-teal m-0 leading-none">4.9★</p>
-                                    <p
-                                        class="text-[0.6rem] tracking-[0.07em] uppercase text-cream/50 mt-[0.2rem] m-0 font-light">
-                                        Rating</p>
+                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">4.9★</p>
+                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">Rating</p>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="absolute -top-4 -right-4 w-[70px] h-[70px] border border-teal/[0.18] rounded-full pointer-events-none">
-                        </div>
-                        <div
-                            class="absolute -bottom-6 -left-6 w-[50px] h-[50px] border border-gold/[0.12] rounded-full pointer-events-none">
-                        </div>
+                        <!-- Soft decorative rings -->
+                        <div class="absolute -top-5 -right-5 w-[90px] h-[90px] border border-teal/[0.08] rounded-full pointer-events-none"></div>
+                        <div class="absolute -bottom-4 -left-4 w-[60px] h-[60px] border border-gold/[0.08] rounded-full pointer-events-none"></div>
                     </div>
 
                 </div>
@@ -771,7 +946,7 @@
         <!-- ═══ SECTION 2: PAIN POINT ═══ -->
         <section id="pain" class="bg-cream text-navy relative overflow-hidden py-14">
             <div
-                class="absolute top-0 left-0 right-0 h-px [background:linear-gradient(90deg,transparent,rgba(14,165,160,0.3),transparent)]">
+                class="absolute top-0 left-0 right-0 h-px [background:linear-gradient(90deg,transparent,rgba(53,114,212,0.3),transparent)]">
             </div>
 
             <div class="max-w-7xl mx-auto px-6">
@@ -877,7 +1052,7 @@
             <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.04] z-0" />
             <div
-                class="absolute inset-0 pointer-events-none z-0 [background:radial-gradient(ellipse_70%_50%_at_50%_50%,rgba(14,165,160,0.06)_0%,transparent_70%)]">
+                class="absolute inset-0 pointer-events-none z-0 [background:radial-gradient(ellipse_70%_50%_at_50%_50%,rgba(53,114,212,0.06)_0%,transparent_70%)]">
             </div>
 
             <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -1021,7 +1196,7 @@
         <!-- ═══ SECTION 4: WHY DR. RITESH ═══ -->
         <section id="why" class="bg-cream text-navy py-14 relative overflow-hidden">
             <div
-                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_60%_70%_at_10%_50%,rgba(14,165,160,0.05)_0%,transparent_60%)]">
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_60%_70%_at_10%_50%,rgba(53,114,212,0.05)_0%,transparent_60%)]">
             </div>
             <div
                 class="absolute top-12 right-8 font-heading text-[clamp(100px,14vw,180px)] font-semibold text-transparent [--tw-text-opacity:1] select-none pointer-events-none leading-none [-webkit-text-stroke:1px_rgba(10,22,40,0.06)]">
@@ -1140,7 +1315,7 @@
             <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=70"
                 alt="" class="absolute inset-0 w-full h-full object-cover object-[center_40%]" />
             <div
-                class="absolute inset-0 [background:linear-gradient(135deg,rgba(10,22,40,0.88)_0%,rgba(14,165,160,0.3)_50%,rgba(10,22,40,0.88)_100%)]">
+                class="absolute inset-0 [background:linear-gradient(135deg,rgba(10,22,40,0.88)_0%,rgba(53,114,212,0.3)_50%,rgba(10,22,40,0.88)_100%)]">
             </div>
             <div class="absolute inset-0 flex items-center justify-center flex-col text-center px-8">
                 <p class="text-banner italic font-light text-white leading-[1.4] max-w-[700px] m-0 mb-3">"Depression is
@@ -1155,10 +1330,10 @@
             <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1400&q=60"
                 alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.05] z-0" />
             <div
-                class="absolute top-0 left-0 right-0 h-px z-10 [background:linear-gradient(90deg,transparent,rgba(14,165,160,0.25),transparent)]">
+                class="absolute top-0 left-0 right-0 h-px z-10 [background:linear-gradient(90deg,transparent,rgba(53,114,212,0.25),transparent)]">
             </div>
             <div
-                class="absolute bottom-0 left-0 right-0 h-px z-10 [background:linear-gradient(90deg,transparent,rgba(14,165,160,0.25),transparent)]">
+                class="absolute bottom-0 left-0 right-0 h-px z-10 [background:linear-gradient(90deg,transparent,rgba(53,114,212,0.25),transparent)]">
             </div>
 
             <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -1172,7 +1347,7 @@
                     <!-- Step 1 -->
                     <div class="flex-1 text-center px-6 relative">
                         <div
-                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#0ea5a0,#0c8f8a)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(14,165,160,0.28)]">
+                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#3572d4,#2a5cb8)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(53,114,212,0.28)]">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
                                 stroke-width="1.5" stroke-linecap="round">
                                 <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -1192,7 +1367,7 @@
                     <!-- Step 2 -->
                     <div class="flex-1 text-center px-6 relative">
                         <div
-                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#0ea5a0,#0c8f8a)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(14,165,160,0.28)]">
+                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#3572d4,#2a5cb8)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(53,114,212,0.28)]">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
                                 stroke-width="1.5" stroke-linecap="round">
                                 <circle cx="12" cy="12" r="4" />
@@ -1213,7 +1388,7 @@
                     <!-- Step 3 -->
                     <div class="flex-1 text-center px-6 relative">
                         <div
-                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#0ea5a0,#0c8f8a)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(14,165,160,0.28)]">
+                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#3572d4,#2a5cb8)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(53,114,212,0.28)]">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
                                 stroke-width="1.5" stroke-linecap="round">
                                 <path
@@ -1241,7 +1416,7 @@
             <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1600&q=60"
                 alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.04] z-0" />
             <div
-                class="absolute inset-0 pointer-events-none z-0 [background:radial-gradient(ellipse_70%_60%_at_50%_50%,rgba(14,165,160,0.06)_0%,transparent_65%)]">
+                class="absolute inset-0 pointer-events-none z-0 [background:radial-gradient(ellipse_70%_60%_at_50%_50%,rgba(53,114,212,0.06)_0%,transparent_65%)]">
             </div>
 
             <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -1421,7 +1596,7 @@
         <!-- ═══ CONTACT FORM SECTION ═══ -->
         <section id="contact-form" class="bg-cream text-navy py-14 relative overflow-hidden">
             <div
-                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_60%_70%_at_80%_40%,rgba(14,165,160,0.05)_0%,transparent_60%),radial-gradient(ellipse_50%_50%_at_20%_80%,rgba(14,165,160,0.04)_0%,transparent_60%)]">
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_60%_70%_at_80%_40%,rgba(53,114,212,0.05)_0%,transparent_60%),radial-gradient(ellipse_50%_50%_at_20%_80%,rgba(53,114,212,0.04)_0%,transparent_60%)]">
             </div>
             <div
                 class="absolute inset-0 pointer-events-none [background-image:linear-gradient(rgba(10,22,40,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(10,22,40,0.03)_1px,transparent_1px)] [background-size:60px_60px]">
@@ -1442,8 +1617,8 @@
                         <div class="flex flex-col gap-[0.875rem]">
                             <div class="flex items-center gap-3">
                                 <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
-                                    <circle cx="9" cy="9" r="9" fill="rgba(14,165,160,0.15)" />
-                                    <path d="M5 9l3 3 5-5" stroke="#0ea5a0" stroke-width="1.5" stroke-linecap="round"
+                                    <circle cx="9" cy="9" r="9" fill="rgba(53,114,212,0.15)" />
+                                    <path d="M5 9l3 3 5-5" stroke="#3572d4" stroke-width="1.5" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
                                 <span class="text-[0.87rem] font-light text-navy/70">No obligation — free to book and
@@ -1451,8 +1626,8 @@
                             </div>
                             <div class="flex items-center gap-3">
                                 <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
-                                    <circle cx="9" cy="9" r="9" fill="rgba(14,165,160,0.15)" />
-                                    <path d="M5 9l3 3 5-5" stroke="#0ea5a0" stroke-width="1.5" stroke-linecap="round"
+                                    <circle cx="9" cy="9" r="9" fill="rgba(53,114,212,0.15)" />
+                                    <path d="M5 9l3 3 5-5" stroke="#3572d4" stroke-width="1.5" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
                                 <span class="text-[0.87rem] font-light text-navy/70">Insurance verified free before your
@@ -1460,8 +1635,8 @@
                             </div>
                             <div class="flex items-center gap-3">
                                 <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
-                                    <circle cx="9" cy="9" r="9" fill="rgba(14,165,160,0.15)" />
-                                    <path d="M5 9l3 3 5-5" stroke="#0ea5a0" stroke-width="1.5" stroke-linecap="round"
+                                    <circle cx="9" cy="9" r="9" fill="rgba(53,114,212,0.15)" />
+                                    <path d="M5 9l3 3 5-5" stroke="#3572d4" stroke-width="1.5" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
                                 <span class="text-[0.87rem] font-light text-navy/70">Response within 24 hours
@@ -1498,18 +1673,18 @@
                             class="bg-[rgba(17,34,64,0.8)] border border-teal/20 border-t-[3px] border-t-teal rounded-[4px] p-[1.8rem]">
                             <p class="text-[0.78rem] font-light text-cream/50 m-0 mb-5 leading-[1.5]">Takes 30 seconds.
                                 We'll handle the rest — including insurance verification.</p>
-                            <form onsubmit="handleFormSubmit(event)">
+                            <form accept-charset="UTF-8" action="https://app.formester.com/forms/xk27PIpuV/submissions" method="POST">
                                 <div class="mb-4">
-                                    <label class="form-label">Your Name</label>
-                                    <input type="text" class="form-input" placeholder="First and last name" required />
+                                    <label class="form-label" for="full_name">Your Name</label>
+                                    <input type="text" id="full_name" name="full_name" class="form-input" placeholder="First and last name" required />
                                 </div>
                                 <div class="mb-4">
-                                    <label class="form-label">Best Phone Number</label>
-                                    <input type="tel" class="form-input" placeholder="(732) 555-1234" required />
+                                    <label class="form-label" for="phone">Best Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="(732) 555-1234" required />
                                 </div>
                                 <div class="mb-[1.4rem]">
-                                    <label class="form-label">What are you struggling with?</label>
-                                    <textarea class="form-input resize-none" rows="3"
+                                    <label class="form-label" for="message">What are you struggling with?</label>
+                                    <textarea id="message" name="message" class="form-input resize-none" rows="3"
                                         placeholder="e.g. depression that isn't responding to medication, anxiety, hopelessness…"
                                         required></textarea>
                                 </div>
@@ -1525,7 +1700,7 @@
                             <div id="form-success" class="hidden text-center py-8 px-4">
                                 <div
                                     class="w-[52px] h-[52px] rounded-full bg-teal/[0.15] border-2 border-teal flex items-center justify-center mx-auto mb-4">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0ea5a0"
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3572d4"
                                         stroke-width="2">
                                         <path d="M20 6L9 17l-5-5" />
                                     </svg>
@@ -1544,7 +1719,7 @@
         <!-- ═══ SECTION 7: FAQ ═══ -->
         <section id="faq" class="bg-cream text-navy py-14 relative overflow-hidden">
             <div
-                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_50%_60%_at_80%_30%,rgba(14,165,160,0.05)_0%,transparent_60%)]">
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_50%_60%_at_80%_30%,rgba(53,114,212,0.05)_0%,transparent_60%)]">
             </div>
 
             <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -1685,10 +1860,10 @@
                 alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.12] z-0" />
             <div class="absolute inset-0 bg-navy/[0.88] z-0"></div>
             <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] [background:radial-gradient(circle,rgba(14,165,160,0.12)_0%,transparent_65%)] pointer-events-none z-0">
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] [background:radial-gradient(circle,rgba(53,114,212,0.12)_0%,transparent_65%)] pointer-events-none z-0">
             </div>
             <div
-                class="absolute inset-0 pointer-events-none z-0 [background-image:linear-gradient(rgba(14,165,160,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(14,165,160,0.03)_1px,transparent_1px)] [background-size:60px_60px]">
+                class="absolute inset-0 pointer-events-none z-0 [background-image:linear-gradient(rgba(53,114,212,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(53,114,212,0.03)_1px,transparent_1px)] [background-size:60px_60px]">
             </div>
 
             <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
@@ -1809,7 +1984,7 @@
                     <h5 class="text-[0.65rem] font-normal tracking-[0.12em] uppercase text-teal mb-4">Contact</h5>
                     <div class="flex flex-col gap-3">
                         <div class="flex items-start gap-[0.65rem]">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(14,165,160,0.6)"
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(53,114,212,0.6)"
                                 stroke-width="1.5" class="mt-[0.2rem] shrink-0">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" />
                                 <circle cx="12" cy="10" r="3" />
@@ -1818,7 +1993,7 @@
                                 aa5, <br />Edison, NJ 08820, United States</span>
                         </div>
                         <div class="flex items-center gap-[0.65rem]">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(14,165,160,0.6)"
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(53,114,212,0.6)"
                                 stroke-width="1.5">
                                 <path
                                     d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
@@ -1826,7 +2001,7 @@
                             <a href="tel:+17325551234" class="footer-link">732-555-1234</a>
                         </div>
                         <!-- <div class="flex items-center gap-[0.65rem]">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(14,165,160,0.6)"
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(53,114,212,0.6)"
                                 stroke-width="1.5">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                                 <polyline points="22,6 12,13 2,6" />
@@ -1875,15 +2050,6 @@
             }
         }
 
-        // Form submit
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            const form = e.target;
-            const success = document.getElementById('form-success');
-            form.style.display = 'none';
-            success.style.display = 'block';
-        }
-
         // Scroll Animations
         const fadeEls = document.querySelectorAll('.fade-up');
         const observer = new IntersectionObserver((entries) => {
@@ -1925,12 +2091,12 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            background: #0ea5a0;
+            background: #3572d4;
             color: white;
             text-decoration: none;
             padding: 0.75rem 1.25rem 0.75rem 1rem;
             border-radius: 100px;
-            box-shadow: 0 8px 32px rgba(14, 165, 160, 0.45), 0 2px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 32px rgba(53, 114, 212, 0.45), 0 2px 8px rgba(0, 0, 0, 0.2);
             font-family: 'Nunito', sans-serif;
             font-size: 0.82rem;
             font-weight: 400;
@@ -1961,9 +2127,9 @@
         }
 
         #float-call:hover {
-            background: #0c8f8a;
+            background: #2a5cb8;
             transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(14, 165, 160, 0.55), 0 4px 12px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 12px 40px rgba(53, 114, 212, 0.55), 0 4px 12px rgba(0, 0, 0, 0.25);
         }
 
         #float-call svg {
@@ -2008,7 +2174,7 @@
         z-index: 980;
         height: 38px;
         background: #0a1628;
-        border-top: 1px solid rgba(14, 165, 160, 0.2);
+        border-top: 1px solid rgba(53, 114, 212, 0.2);
         overflow: hidden;
     }
 
@@ -2041,11 +2207,11 @@
         background: linear-gradient(
             105deg,
             transparent        0%,
-            rgba(14,165,160,0.04)  20%,
-            rgba(14,165,160,0.22)  45%,
+            rgba(53,114,212,0.04)  20%,
+            rgba(53,114,212,0.22)  45%,
             rgba(255,255,255,0.18) 50%,
             rgba(201,169,110,0.18) 55%,
-            rgba(14,165,160,0.06)  75%,
+            rgba(53,114,212,0.06)  75%,
             transparent        100%
         );
         filter: blur(1px);
@@ -2063,9 +2229,9 @@
         background: linear-gradient(
             105deg,
             transparent            0%,
-            rgba(14,165,160,0.03)  30%,
+            rgba(53,114,212,0.03)  30%,
             rgba(201,169,110,0.09) 50%,
-            rgba(14,165,160,0.03)  70%,
+            rgba(53,114,212,0.03)  70%,
             transparent            100%
         );
         filter: blur(4px);
@@ -2095,7 +2261,7 @@
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background: #0ea5a0;
+        background: #3572d4;
         flex-shrink: 0;
         animation: dot-pulse 2s ease-in-out infinite;
     }
@@ -2125,7 +2291,7 @@
     }
 
     #bottom-strip-divider {
-        color: rgba(14, 165, 160, 0.4);
+        color: rgba(53, 114, 212, 0.4);
     }
 
     #bottom-strip-cta {
@@ -2134,9 +2300,9 @@
         font-weight: 400;
         letter-spacing: 0.07em;
         text-transform: uppercase;
-        color: #0ea5a0;
+        color: #3572d4;
         text-decoration: none;
-        border: 1px solid rgba(14, 165, 160, 0.35);
+        border: 1px solid rgba(53, 114, 212, 0.35);
         padding: 0.2rem 0.65rem;
         border-radius: 2px;
         white-space: nowrap;
@@ -2145,8 +2311,8 @@
     }
 
     #bottom-strip-cta:hover {
-        background: rgba(14, 165, 160, 0.1);
-        color: #14b8b3;
+        background: rgba(53, 114, 212, 0.1);
+        color: #4a85e0;
     }
 
     /* Nudge the floating call button up so it clears the strip */
