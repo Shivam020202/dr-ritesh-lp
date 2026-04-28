@@ -197,7 +197,7 @@
             border-top: 2px solid rgba(53, 114, 212, 0.45);
             border-radius: 16px;
             backdrop-filter: blur(16px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.04);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.04);
         }
 
         .badge {
@@ -379,7 +379,7 @@
             gap: 0.5rem;
             text-decoration: none;
             border-radius: 50px;
-            box-shadow: 0 4px 16px rgba(255,255,255,0.15);
+            box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
         }
 
         .btn-white-navy:hover {
@@ -457,7 +457,9 @@
         #mobile-menu::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 2px;
             background: linear-gradient(90deg, transparent 0%, #3572d4 35%, #c9a96e 65%, transparent 100%);
         }
@@ -465,9 +467,12 @@
         #mobile-menu::after {
             content: '';
             position: absolute;
-            bottom: 60px; left: 50%; transform: translateX(-50%);
-            width: 120px; height: 120px;
-            background: radial-gradient(circle, rgba(53,114,212,0.12) 0%, transparent 70%);
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, rgba(53, 114, 212, 0.12) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -486,7 +491,7 @@
             text-align: center;
             margin-bottom: 2.5rem;
             padding-bottom: 2rem;
-            border-bottom: 1px solid rgba(53,114,212,0.15);
+            border-bottom: 1px solid rgba(53, 114, 212, 0.15);
             width: 100%;
         }
 
@@ -561,7 +566,7 @@
         #mobile-menu .mob-contact {
             margin-top: 2.25rem;
             text-align: center;
-            border-top: 1px solid rgba(53,114,212,0.1);
+            border-top: 1px solid rgba(53, 114, 212, 0.1);
             padding-top: 1.5rem;
             width: 100%;
         }
@@ -576,17 +581,20 @@
             transition: color 0.2s;
         }
 
-        #mobile-menu .mob-contact a:hover { color: #3572d4; }
+        #mobile-menu .mob-contact a:hover {
+            color: #3572d4;
+        }
 
         #mobile-menu .mob-close {
             position: absolute;
             top: 1.25rem;
             right: 1.25rem;
-            width: 36px; height: 36px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
-            background: rgba(53,114,212,0.08);
-            border: 1px solid rgba(53,114,212,0.2);
-            color: rgba(248,245,240,0.7);
+            background: rgba(53, 114, 212, 0.08);
+            border: 1px solid rgba(53, 114, 212, 0.2);
+            color: rgba(248, 245, 240, 0.7);
             font-size: 1rem;
             cursor: pointer;
             display: flex;
@@ -597,7 +605,7 @@
         }
 
         #mobile-menu .mob-close:hover {
-            background: rgba(53,114,212,0.18);
+            background: rgba(53, 114, 212, 0.18);
             color: #f8f5f0;
         }
 
@@ -689,7 +697,8 @@
                 align-items: stretch;
             }
 
-            .cta-buttons a, .cta-buttons button {
+            .cta-buttons a,
+            .cta-buttons button {
                 justify-content: center;
                 text-align: center;
             }
@@ -783,10 +792,14 @@
 
         <div class="mob-cta">
             <a href="#contact-form" class="btn-teal" onclick="toggleMenu()">
-                Book Free Consultation
+                Book a Consultation
             </a>
-            <a href="tel:+17325550100" class="btn-outline-white" onclick="toggleMenu()" style="justify-content:center;font-size:0.82rem;padding:0.75rem 1.5rem;letter-spacing:0.1em;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+17325550100" class="btn-outline-white" onclick="toggleMenu()"
+                style="justify-content:center;font-size:0.82rem;padding:0.75rem 1.5rem;letter-spacing:0.1em;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
                 Call (732) 555-1234
             </a>
         </div>
@@ -799,17 +812,18 @@
     <main>
 
         <!-- ═══ SECTION 1: HERO ═══ -->
-        <section id="hero"
-            class="bg-navy relative overflow-hidden flex items-center pt-24 pb-16">
+        <section id="hero" class="bg-navy relative overflow-hidden flex items-center pt-24 pb-16">
             <!-- Soft ambient background image -->
-            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=60"
-                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.05] z-0" />
+            <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.2] z-0" />
             <!-- Warm multi-tone gradient ambience -->
             <div
                 class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_70%_55%_at_65%_25%,rgba(53,114,212,0.14)_0%,transparent_60%),radial-gradient(ellipse_50%_60%_at_15%_75%,rgba(42,92,184,0.12)_0%,transparent_55%),radial-gradient(ellipse_40%_40%_at_80%_80%,rgba(201,169,110,0.06)_0%,transparent_50%)]">
             </div>
             <!-- Soft bottom fade to cream -->
-            <div class="absolute bottom-0 left-0 right-0 h-[80px] pointer-events-none z-[1] [background:linear-gradient(to_top,rgba(248,245,240,0.03)_0%,transparent_100%)]"></div>
+            <div
+                class="absolute bottom-0 left-0 right-0 h-[80px] pointer-events-none z-[1] [background:linear-gradient(to_top,rgba(248,245,240,0.03)_0%,transparent_100%)]">
+            </div>
 
             <div class="max-w-7xl mx-auto px-6 w-full relative z-10 py-8">
                 <div class="hero-split grid gap-14 items-center [grid-template-columns:1fr_0.85fr]">
@@ -828,19 +842,21 @@
                             Personalized TMS, Spravato® &amp; Ketamine Therapy
                         </p>
                         <p class="text-[0.95rem] leading-[1.75] text-cream/60 max-w-[460px] mb-6 font-light">
-                            You've tried everything. We offer advanced, FDA-approved therapies that work differently — tailored to your unique needs by a board-certified psychiatrist.
+                            You've tried everything. We offer advanced, FDA-approved therapies that work differently —
+                            tailored to your unique needs by a board-certified psychiatrist.
                         </p>
 
-                        <!-- Soft urgency nudge -->
+                        <!-- Reassurance nudge -->
                         <a href="#contact-form"
                             class="hero-urgency inline-flex flex-wrap items-center gap-2 bg-teal/[0.06] border border-teal/20 text-teal/80 text-[0.74rem] font-light tracking-[0.02em] px-4 py-[0.4rem] mb-5 rounded-full hover:bg-teal/[0.12] transition-all duration-300 no-underline">
-                            <span class="inline-block w-[5px] h-[5px] rounded-full bg-teal/70 animate-pulse shrink-0"></span>
-                            Limited spots available this week
+                            <span
+                                class="inline-block w-[5px] h-[5px] rounded-full bg-teal/70 animate-pulse shrink-0"></span>
+                            Now accepting new patients in Edison, NJ
                         </a>
 
                         <div class="cta-buttons flex flex-wrap gap-3 mb-6">
                             <a href="#contact-form" class="btn-teal">
-                                Book a Free Consultation
+                                Book a Consultation
                             </a>
                             <a href="tel:+17325550100" class="btn-outline-white">
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -853,7 +869,8 @@
                         </div>
 
                         <!-- Social proof — soft card -->
-                        <div class="flex items-center gap-3 mb-6 px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-xl backdrop-blur-sm">
+                        <div
+                            class="flex items-center gap-3 mb-6 px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-xl backdrop-blur-sm">
                             <img src="https://images.unsplash.com/photo-1702579451557-42f707b4a434?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="Sarah M."
                                 class="w-10 h-10 rounded-full object-cover border-2 border-white/20 shrink-0" />
@@ -861,7 +878,8 @@
                                 <div class="stars text-[0.6rem] leading-none mb-[0.25rem]">★★★★★</div>
                                 <p class="text-[0.8rem] italic font-light text-cream/70 m-0 leading-[1.45]">
                                     "After 4 failed medications, TMS with Dr. Amin changed my life."</p>
-                                <p class="text-[0.66rem] font-normal text-cream/40 m-0 mt-1">Sarah M. — Verified TMS Patient</p>
+                                <p class="text-[0.66rem] font-normal text-cream/40 m-0 mt-1">Sarah M. — Verified TMS
+                                    Patient</p>
                             </div>
                         </div>
 
@@ -897,7 +915,8 @@
                                         class="w-11 h-11 rounded-full object-cover border-2 border-white/20 shrink-0" />
                                     <div>
                                         <p class="text-[0.82rem] font-normal text-cream m-0">Sarah M.</p>
-                                        <p class="text-[0.68rem] font-light text-cream/45 m-0">Verified Patient · Edison, NJ</p>
+                                        <p class="text-[0.68rem] font-light text-cream/45 m-0">Verified Patient ·
+                                            Edison, NJ</p>
                                     </div>
                                 </div>
                             </div>
@@ -913,30 +932,43 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <p class="text-[0.65rem] tracking-[0.08em] uppercase text-teal/80 m-0 mb-[0.15rem] font-normal">ABPN Certified</p>
-                                    <p class="text-[0.78rem] font-normal text-cream/80 m-0">American Board of Psychiatry &amp; Neurology</p>
+                                    <p
+                                        class="text-[0.65rem] tracking-[0.08em] uppercase text-teal/80 m-0 mb-[0.15rem] font-normal">
+                                        ABPN Certified</p>
+                                    <p class="text-[0.78rem] font-normal text-cream/80 m-0">American Board of Psychiatry
+                                        &amp; Neurology</p>
                                 </div>
                             </div>
                             <div class="w-full h-px bg-white/[0.08] mb-5"></div>
                             <!-- Mini Stats -->
                             <div class="grid grid-cols-3 gap-3 text-center">
                                 <div>
-                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">500+</p>
-                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">Patients</p>
+                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">500+
+                                    </p>
+                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">
+                                        Patients</p>
                                 </div>
                                 <div class="border-l border-r border-white/[0.08]">
-                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">15+</p>
-                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">Years</p>
+                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">15+
+                                    </p>
+                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">Years
+                                    </p>
                                 </div>
                                 <div>
-                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">4.9★</p>
-                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">Rating</p>
+                                    <p class="font-heading text-[1.4rem] font-semibold text-teal m-0 leading-none">4.9★
+                                    </p>
+                                    <p class="text-[0.6rem] tracking-[0.05em] text-cream/40 mt-1 m-0 font-light">Rating
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <!-- Soft decorative rings -->
-                        <div class="absolute -top-5 -right-5 w-[90px] h-[90px] border border-teal/[0.08] rounded-full pointer-events-none"></div>
-                        <div class="absolute -bottom-4 -left-4 w-[60px] h-[60px] border border-gold/[0.08] rounded-full pointer-events-none"></div>
+                        <div
+                            class="absolute -top-5 -right-5 w-[90px] h-[90px] border border-teal/[0.08] rounded-full pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -left-4 w-[60px] h-[60px] border border-gold/[0.08] rounded-full pointer-events-none">
+                        </div>
                     </div>
 
                 </div>
@@ -1673,14 +1705,17 @@
                             class="bg-[rgba(17,34,64,0.8)] border border-teal/20 border-t-[3px] border-t-teal rounded-[4px] p-[1.8rem]">
                             <p class="text-[0.78rem] font-light text-cream/50 m-0 mb-5 leading-[1.5]">Takes 30 seconds.
                                 We'll handle the rest — including insurance verification.</p>
-                            <form accept-charset="UTF-8" action="https://app.formester.com/forms/xk27PIpuV/submissions" method="POST">
+                            <form accept-charset="UTF-8" action="https://app.formester.com/forms/xk27PIpuV/submissions"
+                                method="POST">
                                 <div class="mb-4">
                                     <label class="form-label" for="full_name">Your Name</label>
-                                    <input type="text" id="full_name" name="full_name" class="form-input" placeholder="First and last name" required />
+                                    <input type="text" id="full_name" name="full_name" class="form-input"
+                                        placeholder="First and last name" required />
                                 </div>
                                 <div class="mb-4">
                                     <label class="form-label" for="phone">Best Phone Number</label>
-                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="(732) 555-1234" required />
+                                    <input type="tel" id="phone" name="phone" class="form-input"
+                                        placeholder="(732) 555-1234" required />
                                 </div>
                                 <div class="mb-[1.4rem]">
                                     <label class="form-label" for="message">What are you struggling with?</label>
@@ -1690,7 +1725,7 @@
                                 </div>
                                 <button type="submit"
                                     class="btn-teal w-full justify-center !text-[0.82rem] !py-[0.875rem] tracking-[0.08em]">
-                                    Request My Free Consultation →
+                                    Request a Consultation →
                                 </button>
                                 <p
                                     class="text-[0.68rem] font-light text-cream/35 text-center mt-[0.875rem] leading-[1.5] m-0">
@@ -1870,7 +1905,7 @@
                 <div class="fade-up mb-5">
                     <span
                         class="inline-flex items-center gap-2 bg-teal/[0.12] border border-teal/35 text-teal text-[0.68rem] font-normal tracking-[0.1em] uppercase px-[0.875rem] py-[0.3rem] rounded-full">
-                        <span class="text-[0.75rem]">⚡</span> Limited Slots This Week
+                        <span class="text-[0.75rem]">✦</span> Your Journey Starts Here
                     </span>
                 </div>
                 <div class="fade-up fade-up-delay-1">
@@ -1878,7 +1913,7 @@
                         Ready to Feel Like<br />Yourself Again?
                     </h2>
                     <p class="text-[0.8rem] text-teal font-normal tracking-[0.06em] mt-4 uppercase mb-8">
-                        Limited consultation slots available. Take the first step today.
+                        Most insurance accepted. Compassionate care, real results.
                     </p>
                 </div>
                 <div class="fade-up mt-6 fade-up-delay-2 cta-buttons flex flex-wrap justify-center gap-[0.875rem] mb-8">
@@ -2149,184 +2184,203 @@
         }
     </style>
 
-<!-- Sticky Bottom Strip -->
-<div id="bottom-strip">
-    <div id="bottom-strip-inner">
-        <div id="bottom-strip-shimmer"></div>
-        <div id="bottom-strip-content">
-            <span id="bottom-strip-dot"></span>
-            <span id="bottom-strip-text">
-                <span id="bottom-strip-highlight">Limited appointments available this week</span>
-                <span id="bottom-strip-divider">·</span>
-                Consultations fill fast — don't miss your chance to start healing.
-            </span>
-            <a href="#contact-form" id="bottom-strip-cta">Claim Your Spot →</a>
+    <!-- Sticky Bottom Strip -->
+    <div id="bottom-strip">
+        <div id="bottom-strip-inner">
+            <div id="bottom-strip-shimmer"></div>
+            <div id="bottom-strip-content">
+                <span id="bottom-strip-dot"></span>
+                <span id="bottom-strip-text">
+                    <span id="bottom-strip-highlight">You deserve to feel like yourself again</span>
+                    <span id="bottom-strip-divider">·</span>
+                    Speak with a board-certified psychiatrist today.
+                </span>
+                <a href="#contact-form" id="bottom-strip-cta">Book a Consultation →</a>
+            </div>
         </div>
     </div>
-</div>
 
-<style>
-    #bottom-strip {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 980;
-        height: 38px;
-        background: #0a1628;
-        border-top: 1px solid rgba(53, 114, 212, 0.2);
-        overflow: hidden;
-    }
-
-    #bottom-strip-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Base iridescent wash */
-    #bottom-strip {
-        background: linear-gradient(90deg, #0a1628 0%, #0d1f3c 40%, #0a1f35 60%, #0a1628 100%);
-    }
-
-    /* Shimmer layer */
-    #bottom-strip-shimmer {
-        position: absolute;
-        inset: 0;
-        overflow: hidden;
-    }
-
-    /* Primary beam — bright teal-white lance */
-    #bottom-strip-shimmer::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -60%;
-        width: 40%;
-        height: 100%;
-        background: linear-gradient(
-            105deg,
-            transparent        0%,
-            rgba(53,114,212,0.04)  20%,
-            rgba(53,114,212,0.22)  45%,
-            rgba(255,255,255,0.18) 50%,
-            rgba(201,169,110,0.18) 55%,
-            rgba(53,114,212,0.06)  75%,
-            transparent        100%
-        );
-        filter: blur(1px);
-        animation: beam-sweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-    }
-
-    /* Secondary softer halo — trails behind */
-    #bottom-strip-shimmer::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -80%;
-        width: 60%;
-        height: 100%;
-        background: linear-gradient(
-            105deg,
-            transparent            0%,
-            rgba(53,114,212,0.03)  30%,
-            rgba(201,169,110,0.09) 50%,
-            rgba(53,114,212,0.03)  70%,
-            transparent            100%
-        );
-        filter: blur(4px);
-        animation: beam-sweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.08s;
-    }
-
-    @keyframes beam-sweep {
-        0%   { left: -60%;  opacity: 0; }
-        5%   { opacity: 1; }
-        90%  { opacity: 1; }
-        100% { left: 120%;  opacity: 0; }
-    }
-
-    #bottom-strip-content {
-        position: relative;
-        z-index: 1;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.65rem;
-        padding: 0 1.25rem;
-    }
-
-    #bottom-strip-dot {
-        display: inline-block;
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background: #3572d4;
-        flex-shrink: 0;
-        animation: dot-pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes dot-pulse {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50%       { opacity: 0.4; transform: scale(0.75); }
-    }
-
-    #bottom-strip-text {
-        font-family: 'Nunito', sans-serif;
-        font-size: 0.72rem;
-        font-weight: 300;
-        color: rgba(248, 245, 240, 0.55);
-        letter-spacing: 0.02em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: flex;
-        align-items: center;
-        gap: 0.45rem;
-    }
-
-    #bottom-strip-highlight {
-        font-weight: 400;
-        color: rgba(248, 245, 240, 0.82);
-    }
-
-    #bottom-strip-divider {
-        color: rgba(53, 114, 212, 0.4);
-    }
-
-    #bottom-strip-cta {
-        font-family: 'Nunito', sans-serif;
-        font-size: 0.68rem;
-        font-weight: 400;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-        color: #3572d4;
-        text-decoration: none;
-        border: 1px solid rgba(53, 114, 212, 0.35);
-        padding: 0.2rem 0.65rem;
-        border-radius: 2px;
-        white-space: nowrap;
-        flex-shrink: 0;
-        transition: background 0.2s ease, color 0.2s ease;
-    }
-
-    #bottom-strip-cta:hover {
-        background: rgba(53, 114, 212, 0.1);
-        color: #4a85e0;
-    }
-
-    /* Nudge the floating call button up so it clears the strip */
-    #float-call {
-        bottom: calc(1.75rem + 38px);
-    }
-
-    @media (max-width: 560px) {
-        #bottom-strip-divider,
-        #bottom-strip-text > span:last-of-type {
-            display: none;
+    <style>
+        #bottom-strip {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 980;
+            height: 38px;
+            background: #0a1628;
+            border-top: 1px solid rgba(53, 114, 212, 0.2);
+            overflow: hidden;
         }
-    }
-</style>
+
+        #bottom-strip-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Base iridescent wash */
+        #bottom-strip {
+            background: linear-gradient(90deg, #0a1628 0%, #0d1f3c 40%, #0a1f35 60%, #0a1628 100%);
+        }
+
+        /* Shimmer layer */
+        #bottom-strip-shimmer {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        /* Primary beam — bright teal-white lance */
+        #bottom-strip-shimmer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -60%;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(105deg,
+                    transparent 0%,
+                    rgba(53, 114, 212, 0.04) 20%,
+                    rgba(53, 114, 212, 0.22) 45%,
+                    rgba(255, 255, 255, 0.18) 50%,
+                    rgba(201, 169, 110, 0.18) 55%,
+                    rgba(53, 114, 212, 0.06) 75%,
+                    transparent 100%);
+            filter: blur(1px);
+            animation: beam-sweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+
+        /* Secondary softer halo — trails behind */
+        #bottom-strip-shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -80%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(105deg,
+                    transparent 0%,
+                    rgba(53, 114, 212, 0.03) 30%,
+                    rgba(201, 169, 110, 0.09) 50%,
+                    rgba(53, 114, 212, 0.03) 70%,
+                    transparent 100%);
+            filter: blur(4px);
+            animation: beam-sweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.08s;
+        }
+
+        @keyframes beam-sweep {
+            0% {
+                left: -60%;
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                left: 120%;
+                opacity: 0;
+            }
+        }
+
+        #bottom-strip-content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.65rem;
+            padding: 0 1.25rem;
+        }
+
+        #bottom-strip-dot {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #3572d4;
+            flex-shrink: 0;
+            animation: dot-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes dot-pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(0.75);
+            }
+        }
+
+        #bottom-strip-text {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 300;
+            color: rgba(248, 245, 240, 0.55);
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        #bottom-strip-highlight {
+            font-weight: 400;
+            color: rgba(248, 245, 240, 0.82);
+        }
+
+        #bottom-strip-divider {
+            color: rgba(53, 114, 212, 0.4);
+        }
+
+        #bottom-strip-cta {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 400;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #3572d4;
+            text-decoration: none;
+            border: 1px solid rgba(53, 114, 212, 0.35);
+            padding: 0.2rem 0.65rem;
+            border-radius: 2px;
+            white-space: nowrap;
+            flex-shrink: 0;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        #bottom-strip-cta:hover {
+            background: rgba(53, 114, 212, 0.1);
+            color: #4a85e0;
+        }
+
+        /* Nudge the floating call button up so it clears the strip */
+        #float-call {
+            bottom: calc(1.75rem + 38px);
+        }
+
+        @media (max-width: 560px) {
+
+            #bottom-strip-divider,
+            #bottom-strip-text>span:last-of-type {
+                display: none;
+            }
+        }
+    </style>
 </body>
 
 </html>
